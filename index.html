@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fazie</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/fazie.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html" class="logo">fazie</a>
+        <div class="fa-solid fa-bars menu"></div>
+        <ul class="nav">
+          <li><a href="index.html" class="active-link">home</a></li>
+          <li><a href="shop.html">shop</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="contact.html">contact</a></li>
+          <form class="mobile-form" action="">
+              <input class="search-input" type="search" placeholder="search here...">
+              <label for="search-input" class=" fas fa-search"></label>
+            </form>
+          <i class="close fas fa-xmark"></i>
+        </ul>
+        <ul class="icons">
+            <li class="hided-icon">
+            <i class="search fas fa-search"></i>
+            <form class="search-form" action="">
+              <input
+                class="search-input"
+                type="search"
+                placeholder="search here..."
+              />
+              <label for="search-input" class="fas fa-search"></label>
+            </form>
+          </li>
+        <li class="user">
+            <a href="account.html"><i class="fa-regular fa-user"></i></a>
+            <form action="" class="account">
+              <input
+                type="text"
+                name="name"
+                placeholder="username or email address*"
+              />
+              <input type="password" name="password" placeholder="password*" />
+              <button type="submit">sign in</button>
+              <input type="checkbox" name="remember" id="remember-me" />
+              <span>remember me</span>
+            </form>
+          </li>
+          <li class="cart">
+              <a href="cart.html" title="view your shopping cart">
+              <span></span>
+              <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+               <div class="cart-content">
+                  <div class="cart-products">
+                    <p>your cart is curently empty</p>
+                  </div> 
+                  <div class="added-total"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- scroll to top button -->
+    <button class="scroll-up">
+      <i class="fas fa-angle-up"></i>
+    </button>
+    <!-- landing -->
+    <div class="landing" >
+      <div class="background-img">
+        <picture class="active-bg">
+          <source srcset="images/03-ms.jpg"
+          media="(max-width:768px)"
+          >
+          <img src="images/03.jpg" alt="">
+        </picture>
+        <picture>
+         <source srcset="images/02-ms.jpg"
+          media="(max-width:768px)"
+          >
+          <img src="images/02.jpg" alt="">
+          </picture>
+        <picture>
+          <source srcset="images/01-ms.jpg"
+          media="(max-width:768px)"
+          >
+          <img src="images/01.jpg"  alt="">
+        </picture>
+        <picture>
+          <source srcset="images/03-ms.jpg"
+          media="(max-width:768px)"
+          >
+          <img src="images/03.jpg"  alt="">
+        </picture>
+        
+      </div>
+      <div class="intro-text">
+        <h2>
+          classy modest <br />
+          fashion
+        </h2>
+        <a href="shop.html" class="shop-now">shop now</a></div>
+      
+    </div>
+    <section class="content">
+      <div class="container">
+        <div class="content-top">
+          <div class="content-logo reveal">fazie</div>
+          <h2 class="content-heading reveal">
+            dress well because you deserve the best
+          </h2>
+          <p class="content-p reveal">
+            our collection will make you feel confident and empowered. Embrace
+            the allure of every single piece and let it become your signature
+            fashion statement.
+          </p>
+        </div>
+        <div class="content-items">
+          <div class="content-box">
+            <div class="reveal"> 
+              <i class="fa-solid fa-dollar-sign"></i>
+            <h2>payment on delivery</h2>
+          </div>
+            <p class="reveal">
+              Pay with ease when your fazie order arrives at your doorstep.
+              Embrace hassle-free shopping with our secure payment option
+            </p>
+          </div>
+          <div class="content-box">
+            <div class="reveal">
+              <i class="fa-solid fa-truck-fast"></i>
+            <h2>free delivery</h2>
+            </div>
+            <p class="reveal">
+              fazie delivers your exquisite moroccan-style garments right to
+              your door, anywhere in morocco,Experience the joy of shopping with
+              no additional shipping costs.
+            </p>
+          </div>
+          <div class="content-box">
+            <div class="reveal">
+              <i class="fa-solid fa-rotate-left"></i>
+            <h2>3 days return</h2>
+            </div>
+            <p class="reveal">
+              fazie offers a 3-day return policy. If you're not completely
+              satisfied with your purchase, simply return it within 3 days for a
+              hassle-free exchange or refund. Your satisfaction is our top
+              priority
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- new arrival -->
+    <section class="new-arrival">
+      <div class="new-overlay"></div>
+      <div class="container">
+        <h2>The last look</h2>
+        <p>
+          New dresses are now available on the store. Hurry and purchase them
+          before they run out of stock.
+        </p>
+        <a href="shop.html">shop what's new</a>
+      </div>
+    </section>
+    <!-- product -->
+    <section class="product">
+      <div class="container">
+        <h3>latest collection</h3>
+        <div class="product-content">
+          <div class="product-box">
+            <div class="img show-right">
+              <a href="fuchsia-dress.html"><img src="images/fuchsia.jpeg" alt="fuchsia dress" class="product-img" /></a>
+              <div class="shop">
+                <i class="fa-solid fa-cart-shopping add-shop-cart"></i>
+                <a href="cart.html" class="show-cart"><i class="fa-solid fa-check"></i></a>
+              </div>
+            </div>
+            <div class="info show-right">
+              <del>400,00 dh</del> <span class="actual-price">350,00 dh</span>
+              <a href="fuchsia-dress.html"><h2>fuchsia dress</h2></a>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="product-box show-right">
+            <div class="img">
+              <a href="black-dress.html"><img src="images/black.jpeg" alt="black dress" class="product-img"/></a>
+              <div class="shop">
+                <i class="fa-solid fa-cart-shopping add-shop-cart"></i>
+                <a href="cart.html" class="show-cart">
+                  <i class="fa-solid fa-check"></i>
+                </a>
+                </div>
+            </div>
+            <div class="info">
+              <del>400,00 dh</del> <span class="actual-price">300,00 dh</span>
+              <a href="black-dress.html"><h2>black dress</h2></a>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="product-box show-right">
+            <div class="img">
+              <a href="camel-dress.html">
+                <img src="images/camel.jpg" alt="camel dress" class="product-img"/>
+              </a>
+              <div class="shop">
+                <i class="fa-solid fa-cart-shopping add-shop-cart"></i>
+                <a href="cart.html" class="show-cart">
+                  <i class="fa-solid fa-check"></i>
+                </a>
+              </div>
+            </div>
+            <div class="info">
+              <del>500,00 dh</del> <span class="actual-price">450,00 dh</span>
+              <a href="camel-dress.html"><h2>camel dress</h2></a>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="product-box show-right">
+            <div class="img">
+              <a href="beige-dress.html">
+                <img src="images/beige.jpeg" alt="beige dress" class="product-img"/>
+              </a>
+              <div class="shop">
+                <i class="fa-solid fa-cart-shopping add-shop-cart"></i>
+                <a href="cart.html" class="show-cart">
+                  <i class="fa-solid fa-check"></i>
+                </a>
+              </div>
+            </div>
+            <div class="info">
+              <del>500,00 dh</del> <span class="actual-price">450,00 dh</span>
+              <a href="beige-dress.html"><h2>beige dress</h2></a>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <a href="shop.html"> view all</a>
+      </div>
+    </section>
+    <!-- footer  -->
+    <footer class="footer">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="social">
+          <div class="logo">fazie</div>
+          <div class="social-contact">
+            <a href="https://facebook.com/" class="face"><i class="fab fa-facebook "></i></a>
+            <a href="https://fa-instagram.com/" class="insta"><i class="fab fa-instagram "></i></a>
+            <a href="https://whatsap.com/" class="whatsap"><i class="fab fa-whatsapp"></i></i></a>
+          </div>
+        </div>
+        <div class="address">
+          <h3>fazie fashion</h3>
+          <p>
+            address du showroom : <br />
+            maps : <a href="">fazie store</a>
+          </p>
+          <p>
+            tel : +212 6 45 48 87 88
+            <br />
+            mail : fazie@mail.com
+          </p>
+        </div>
+        <div class="text">
+          it began with a dream <i class="fa-solid fa-heart"></i> !
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

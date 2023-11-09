@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Account - Fazie</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/fazie.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html" class="logo">fazie</a>
+        <div class="fa-solid fa-bars menu"></div>
+        <ul class="nav">
+          <li><a href="index.html">home</a></li>
+          <li><a href="shop.html">shop</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="contact.html">contact</a></li>
+          <form class="mobile-form" action="">
+              <input class="search-input" type="search" placeholder="search here...">
+              <label for="search-input" class=" fas fa-search"></label>
+            </form>
+          <i class="close fas fa-xmark"></i>
+        </ul>
+          <ul class="icons">
+            <li class="hided-icon">
+            <i class="search fas fa-search"></i>
+            <form class="search-form" action="">
+              <input
+                class="search-input"
+                type="search"
+                placeholder="search here..."
+              />
+              <label for="search-input" class="fas fa-search"></label>
+            </form>
+          </li>
+        <li class="user">
+            <a href="account.html"><i class="fa-regular fa-user"></i></a>
+            <form action="" class="account">
+              <input
+                type="text"
+                name="name"
+                placeholder="username or email address*"
+              />
+              <input type="password" name="password" placeholder="password*" />
+              <button type="submit">sign in</button>
+              <input type="checkbox" name="remember" id="remember-me" />
+              <span>remember me</span>
+            </form>
+          </li>
+          <li class="cart">
+              <a href="cart.html" title="view your shopping cart">
+              <span></span>
+              <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+               <div class="cart-content">
+                  <div class="cart-products">
+                    <p>your cart is curently empty</p>
+                  </div> 
+                  <div class="added-total"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="account-content">
+      <div class="container">
+        <div class="first-col">
+          <h2>login</h2>
+          <form action="">
+            <label for="">username or email address <span>*</span></label>
+            <input type="text" required name="username" id="">
+            <label for="">password <span>*</span></label>
+            <div class="password-field"> 
+              <input type="password" name="pwd" class="password"> 
+              <i class="show-pwd far fa-eye-slash"></i>
+            </div>
+            <button type="submit">log in</button>
+            <input type="checkbox" class="check"> 
+            <span class="remember">remember me</span>
+            <a href="">lost your password?</a>
+          </form>
+        </div>
+        <div class="scd-col">
+          <h2>register</h2>
+          <form action="">
+          <label for="">email address <span>*</span></label>
+            <input type="text" name="email" id="">
+            <label for="">password <span>*</span></label>
+            <div class="password-field"> 
+              <input type="password" name="pwd" class="password">
+              <i class="show-pwd far fa-eye-slash"></i>
+            </div>
+            <p>Your personal data will be used to accompany you during your visit to the website, manage access to your account, and for other reasons described in our privacy policy.</p>
+            <button type="submit">register</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  <footer class="footer">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="social">
+          <div class="logo">fazie</div>
+          <div class="social-contact">
+            <a href="https://facebook.com/" class="face"><i class="fab fa-facebook "></i></a>
+            <a href="https://fa-instagram.com/" class="insta"><i class="fab fa-instagram "></i></a>
+            <a href="https://whatsap.com/" class="whatsap"><i class="fab fa-whatsapp"></i></i></a>
+            
+          </div>
+        </div>
+        <div class="address">
+          <h3>fazie fashion</h3>
+          <p>
+            address du showroom : <br />
+            maps : <a href="">fazie store</a>
+          </p>
+          <p>
+            tel : +212 6 45 48 87 88
+            <br />
+            mail : fazie@mail.com
+          </p>
+        </div>
+        <div class="text">
+          it began with a dream <i class="fa-solid fa-heart"></i> !
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

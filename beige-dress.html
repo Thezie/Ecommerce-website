@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beige Dress - Fazie</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/fazie.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html" class="logo">fazie</a>
+        <div class="fa-solid fa-bars menu"></div>
+        <ul class="nav">
+          <li><a href="index.html" class="active">home</a></li>
+          <li><a href="shop.html">shop</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="contact.html">contact</a></li>
+          <form class="mobile-form" action="">
+              <input class="search-input" type="search" placeholder="search here...">
+              <label for="search-input" class=" fas fa-search"></label>
+            </form>
+          <i class="close fas fa-xmark"></i>
+        </ul>
+        <ul class="icons">
+           <li class="hided-icon">
+            <i class="search fas fa-search"></i>
+            <form class="search-form" action="">
+              <input
+                class="search-input"
+                type="search"
+                placeholder="search here..."
+              />
+              <label for="search-input" class="fas fa-search"></label>
+            </form>
+          </li>
+        
+        <li class="user">
+            <a href="account.html"><i class="fa-regular fa-user"></i></a>
+            <form action="" class="account">
+              <input
+                type="text"
+                name="name"
+                placeholder="username or email address*"/>
+              <input type="password" name="password" placeholder="password*" />
+              <button type="submit">sign in</button>
+              <input type="checkbox" name="remember" id="remember-me" />
+              <span>remember me</span>
+            </form>
+          </li>
+          <li class="cart">
+            <a href="cart.html" title="view your shopping cart">
+              <span></span>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <div class="cart-content">
+                <div class="cart-products">
+                  <p>your cart is curently empty</p>
+                </div> 
+                <div class="added-total"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- product container -->
+    <section class="product-section">
+          <div class="container">
+                <div id="added-widget">
+                  <div>
+                    <i class="fa-solid fa-check"></i>
+                  <p class="added-widget-msg"></p>
+                </div>
+                  <a href="shopping.html"> see cart</a>
+              </div>
+            <div class="item-content">
+            <div class="product-image">
+                <div class="big-image-container">
+                    <img src="images/oneb-beige.jpeg" alt="">
+                    <img  src="images/twob-beige.jpeg" alt="">
+                    <img  src="images/threeb-beige.jpeg" alt="">
+                </div>
+                <ul class="images">
+                    <li> <img id="product-img" src="images/ones-beige.jpeg" alt=""></li>
+                    <li> <img src="images/twos-beige.jpeg"   alt=""></li>
+                    <li> <img src="images/threes-beige.jpeg"  alt=""></li>
+                </ul>
+            </div>
+            <div class="lightbox">
+              <div class="fs-image">
+                <img id="full-image">
+              </div>
+              <div class="arrow arrow-left">
+                <i class="fas fa-arrow-left"></i>
+              </div>
+              <div class="arrow arrow-right">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+              <div class="slider-number"></div>
+            </div>
+            <div class="product-info">
+                <h2>beige dress</h2>
+                <div class="review-stars">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class=" far fa-star"></i>
+                    <i class=" far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>(0)</span>
+                </div>
+                <span>stock: <span class="stock-state">available</span></span>
+                <p class="product-price">450,99 DH</p>
+                <ul>
+                  <h4>measurements:</h4>
+                    <li>Size : Standard</li>
+                    <li>Shoulders: 40</li>
+                    <li>Chest : 30</li>
+                    <li>Hips : 34</li>
+                    <li>Length: 146</li>
+                </ul>
+                <div class="order">
+                  <label for="quantity"> select quantity: </label>
+                  <select name="quantity" id="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="3">103</option>
+                  </select>
+                  <button class="add-cart" type="submit">add to cart</button>
+                </div>
+            </div>
+            </div>
+          </div>
+    </section>
+      <section class="review-section">
+          <div class="container">
+            <h2>reviews</h2> 
+             <div class="review-info">
+                <h2>customers reviews</h2>
+                <p>there are no reviews yet</p>
+                <div class="first-review">
+                <h2>be the firt to review this product</h2>
+                <p>Your email address will not be published. Required fields are marked *</p>
+                  <div class="review-stars"><span>your rating </span>  
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class=" far fa-star"></i>
+                    <i class=" far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+            </div>
+            <form class="review-form"  action="">
+                    <textarea name="" id="" cols="30" rows="5" placeholder="your review *"></textarea>
+                    <div class="inputs">
+                      <input type="text" placeholder="name *">
+                    <input type="email" placeholder="email *">
+                     </div>
+                    <input type="checkbox" id="checkbox-review">
+                    <label for="checkbox-review">Save my name, email, and website in this browser for the next time I comment.</label>
+                    <button type="submit">submit</button>
+            </form>
+          </div>
+        </section>
+                    <!-- related products -->
+        <section class="product">
+          <div class="container">
+          <h3>related products</h3>
+          <div class="product-content">
+                  <div class="product-box">
+                    <div class="img">
+                        <a href="fuchsia-dress.html">
+                          <img src="images/fuchsia.jpeg" alt="fuchsia dress" class="product-img"/>
+                        </a>
+                        <div class="shop">
+                          <i class="fa-solid fa-cart-shopping add-shop-cart"></i>
+                          <a href="cart.html" class="show-cart">
+                            <i class="fa-solid fa-check"></i>
+                          </a>
+                        </div>
+                    </div>
+                      <div class="info">
+                        <del>400,00 dh</del> <span class="actual-price">350,00 dh</span>
+                        <a href="fuchsia-dress.html"><h2>fuchsia dress</h2></a>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                  </div>
+                <div class="product-box">
+                    <div class="img">
+                        <a href="camel-dress.html">
+                            <img src="images/camel.jpg" alt="camel dress" class="product-img" />
+                        </a>
+                        <div class="shop">
+                          <i class="fa-solid fa-cart-shopping add-shop-cart"></i>
+                          <a href="cart.html" class="show-cart">
+                            <i class="fa-solid fa-check"></i>
+                          </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <del>500,00 dh</del> <span class="actual-price">450,00 dh</span>
+                        <a href="camel-dress.html"><h2>camel dress</h2></a>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="img">
+                        <a href="black-dress.html">
+                            <img src="images/black.jpeg" alt="black dress" class="product-img" />
+                        </a>
+                        <div class="shop">
+                          <i class="fa-solid fa-cart-shopping add-shop-cart"></i>
+                          <a href="cart.html" class="show-cart">
+                            <i class="fa-solid fa-check"></i>
+                          </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <del>400,00 dh</del> <span class="actual-price">300,00 dh</span>
+                        <a href="black-dress.html"><h2>black dress</h2></a>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        </section>
+    <footer class="footer">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="social">
+          <div class="logo">fazie</div>
+          <div class="social-contact">
+            <a href="https://facebook.com/" class="face"><i class="fab fa-facebook "></i></a>
+            <a href="https://fa-instagram.com/" class="insta"><i class="fab fa-instagram "></i></a>
+            <a href="https://whatsap.com/" class="whatsap"><i class="fab fa-whatsapp"></i></i></a>
+            
+          </div>
+        </div>
+        <div class="address">
+          <h3>fazie fashion</h3>
+          <p>
+            address du showroom : <br />
+            maps : <a href="">fazie store</a>
+          </p>
+          <p>
+            tel : +212 6 45 48 87 88
+            <br />
+            mail : fazie@mail.com
+          </p>
+        </div>
+        <div class="text">
+          it began with a dream <i class="fa-solid fa-heart"></i> !
+        </div>
+      </div>
+    </section>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

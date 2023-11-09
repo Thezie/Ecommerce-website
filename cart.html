@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart - Fazie</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/fazie.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html" class="logo">fazie</a>
+        <div class="fa-solid fa-bars menu"></div>
+        <ul class="nav">
+          <li><a href="index.html">home</a></li>
+          <li><a href="shop.html">shop</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="contact.html">contact</a></li>
+          <form class="mobile-form" action="">
+              <input class="search-input" type="search" placeholder="search here...">
+              <label for="search-input" class=" fas fa-search"></label>
+            </form>
+          <i class="close fas fa-xmark"></i>
+        </ul>
+          <ul class="icons">
+            <li class="hided-icon">
+            <i class="search fas fa-search"></i>
+            <form class="search-form" action="">
+              <input
+                class="search-input"
+                type="search"
+                placeholder="search here..."
+              />
+              <label for="search-input" class="fas fa-search"></label>
+            </form>
+          </li>
+        <li class="user">
+            <a href="account.html"><i class="fa-regular fa-user"></i></a>
+            <form action="" class="account">
+              <input
+                type="text"
+                name="name"
+                placeholder="username or email address*"
+              />
+              <input type="password" name="password" placeholder="password*" />
+              <button type="submit">sign in</button>
+              <input type="checkbox" name="remember" id="remember-me" />
+              <span>remember me</span>
+            </form>
+          </li>
+          <li class="cart">
+              <a href="cart.html" title="view your shopping cart">
+              <span></span>
+              <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+               <div class="cart-content">
+                  <div class="cart-products">
+                    <p>your cart is curently empty</p>
+                  </div> 
+                  <div class="added-total"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="cart-section">
+      <h2>cart</h2>
+      <div id="empty-data-cart">
+        <p>your cart is curently empty</p>
+      <a  href="shop.html" class="return-shop">return to shop</a>
+      </div>
+      <div class="container">
+            <div class="total-cart-products">
+                          <table>
+                            <thead>
+                              <tr>
+                                <th  class="product-remove"></th>
+                                <th class="product-thumbnail" ></th>
+                                <th >product</th>
+                                <th >price</th>
+                                <th>quantity</th>
+                                <th>subtotal</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                              </tr>
+                            <tr>
+                                <td colspan="6">
+                                  <div class="coupon-code">
+                                  <input type="text" placeholder="coupon code">
+                                  <button>add coupon code</button>
+                                  </div>
+                                  <button class="update-cart">update your cart </button>
+                                </td>
+                            </tr>
+                          </tbody>
+                          </table>
+                        </div>
+                  <div class="total-cart-price">
+                          <h3>total cart</h3>
+                          <table>
+                            <tr>
+                              <td>subtotal</td>
+                              <td class="subtotal-price"></td>
+                            </tr>
+                            <tr>
+                              <td>shipping</td>
+                              <td>free shipping</td>
+                            </tr>
+                          </table>
+                          <div class="checkout-total">
+                            <div class="checkout-price">
+                              <span>total</span>
+                              <span class="subtotal-price"></span>
+                            </div>
+                            <button id="submit-order">confirm your cart</button>
+                          </div>
+                  </div>
+          </div>
+      </section>
+  <footer class="footer">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="social">
+          <div class="logo">fazie</div>
+          <div class="social-contact">
+            <a href="https://facebook.com/" class="face"><i class="fab fa-facebook "></i></a>
+            <a href="https://fa-instagram.com/" class="insta"><i class="fab fa-instagram "></i></a>
+            <a href="https://whatsap.com/" class="whatsap"><i class="fab fa-whatsapp"></i></i></a>
+            
+          </div>
+        </div>
+        <div class="address">
+          <h3>fazie fashion</h3>
+          <p>
+            address du showroom : <br />
+            maps : <a href="">fazie store</a>
+          </p>
+          <p>
+            tel : +212 6 45 48 87 88
+            <br />
+            mail : fazie@mail.com
+          </p>
+        </div>
+        <div class="text">
+          it began with a dream <i class="fa-solid fa-heart"></i> !
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
